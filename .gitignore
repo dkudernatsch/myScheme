@@ -1,0 +1,5 @@
+.stack-work/
+myScheme.cabal
+out
+*~
+.idea/workspace.xml
