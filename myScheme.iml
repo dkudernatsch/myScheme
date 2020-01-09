@@ -43,9 +43,7 @@
     <orderEntry type="library" name="time-1.8.0.2" level="project" />
     <orderEntry type="library" name="ghc-boot-th-8.6.5" level="project" />
     <orderEntry type="library" name="pretty-1.1.3.6" level="project" />
-    <orderEntry type="library" name="Win32-2.6.1.0" level="project" />
     <orderEntry type="library" name="colour-2.3.5" level="project" />
-    <orderEntry type="library" name="mintty-0.1.2" level="project" />
     <orderEntry type="library" name="primitive-0.6.4.0" level="project" />
     <orderEntry type="library" name="gloss-1.13.1.1" level="project" />
     <orderEntry type="library" name="GLUT-2.7.0.15" level="project" />
@@ -58,5 +56,6 @@
     <orderEntry type="library" name="OpenGLRaw-3.3.3.0" level="project" />
     <orderEntry type="library" name="fixed-0.3" level="project" />
     <orderEntry type="library" name="half-0.3" level="project" />
+    <orderEntry type="library" name="unix-2.7.2.2" level="project" />
   </component>
 </module>

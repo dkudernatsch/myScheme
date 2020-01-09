@@ -9,7 +9,7 @@ import System.IO
 main :: IO ()
 main = do
     hSetBuffering stdout LineBuffering
-    s <- readFile "C:\\Users\\Daniel\\Nextcloud\\Programming\\Haskell\\FUS\\myScheme\\test\\fractal-tree.scm"
+    s <- readFile "/home/daniel/Files/Programming/Haskell/myScheme/test/fractal-tree.scm"
     let res = runProgram s
     let pathIo = case res of
             Right (val, cmds) -> runPath cmds

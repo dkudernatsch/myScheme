@@ -1,6 +1,8 @@
 (begin
-  (define initLength 100)
-  (define iterations 12)
+  (define initLength 200)
+  (define falloff-percent 80)
+  (define iterations 10)
+  (define angle 45)
 
   (define draw-tree
     (lambda (length depth curveature)
@@ -8,9 +10,9 @@
         (begin
           (move-forward length)
           (turn-right curveature)
-          (draw-tree (/ (* 70 length) 100) (- depth 1) curveature)
+          (draw-tree (/ (* falloff-percent length) 100) (- depth 1) curveature)
           (turn-left (* curveature 2))
-          (draw-tree (/ (* 70 length) 100) (- depth 1) curveature)
+          (draw-tree (/ (* falloff-percent length) 100) (- depth 1) curveature)
           (turn-right curveature)
           (turn-left 180)
           (move-forward length)
@@ -20,5 +22,5 @@
       )
     )
   )
-  (draw-tree initLength iterations 135)
+  (draw-tree initLength iterations angle)
 )
